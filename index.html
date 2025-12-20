@@ -92,8 +92,74 @@
             opacity: 0.9;
         }
 
-        /* NAVIGATION - Day 1 (Alex)
-           Git Command: git commit -m "Refine navbar labels" */
+        /* COURSES SECTION - Day 2 (Alex - Feature Branch)
+           Git Command: git commit -m "Enhance header navbar and courses cards" */
+        .courses-section {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .course-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-image {
+            height: 160px;
+            background: linear-gradient(135deg, #0066cc, #0099cc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .course-content {
+            padding: 1.5rem;
+        }
+
+        .course-category {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-title {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* IMPROVED NAVBAR - Day 2 (Alex) */
         .navbar {
             background: white;
             padding: 1rem 2rem;
@@ -103,18 +169,23 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
             color: #0066cc;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
         .nav-link {
@@ -123,6 +194,7 @@
             padding: 0.5rem 1rem;
             border-radius: 4px;
             transition: all 0.3s ease;
+            font-weight: 500;
         }
 
         .nav-link:hover {
@@ -190,15 +262,17 @@
     -->
 
     <div class="day-marker">Day 0: Initial Setup</div>
-    <!-- NAVIGATION - Day 1 (Alex)
-         Git Command: git commit -m "Refine navbar labels" -->
+
+    <!-- IMPROVED NAVBAR - Day 2 (Alex)
+         Git Command: git commit -m "Enhance header navbar and courses cards" -->
     <nav class="navbar">
-        <div class="logo">IT Education</div>
+        <div class="logo">🎓 IT Education</div>
         <ul class="nav-menu">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#" class="nav-link">Courses</a></li>
             <li><a href="#" class="nav-link">Learning Path</a></li>
-            <li><a href="#" class="nav-link">Team</a></li>
+            <li><a href="#" class="nav-link">Tech Stack</a></li>
+            <li><a href="#" class="nav-link">Testimonials</a></li>
             <li><a href="#" class="nav-link">Contact</a></li>
         </ul>
     </nav>
